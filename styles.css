@@ -642,7 +642,7 @@
   display: grid;
   place-items: center;
   overflow: hidden;  /* ← CRITIQUE : sans ça l'image déborde */
-  align-self: center;
+  align-self: flex-start;
 }
 
 .hero-image img {
@@ -655,6 +655,7 @@
 @media (max-width: 980px) {
   .hero-image {
     min-height: 380px;  /* ← réduis sur mobile */
+     align-self: auto;
     display: none;      /* ou cache-la complètement sur mobile */
   }
 }
