@@ -197,7 +197,8 @@
 .hero-image {
   position: relative;
   aspect-ratio: 1 / 1;
-  min-height: 300px;
+  width: 100%;
+  max-width: 100%;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -224,7 +225,6 @@
   }
   
   .hero-image {
-    min-height: 300px;
     display: none;
   }
   
