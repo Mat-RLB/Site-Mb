@@ -201,7 +201,6 @@
   display: grid;
   place-items: center;
   overflow: hidden;
-  margin-top: -40px;  /* ← ajoute ça pour remonter l'image */
 }
   /* Pas de border-radius, pas de shadow, pas de background cadre */
 @media (min-width: 981px) {
