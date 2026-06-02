@@ -305,19 +305,7 @@
     transform: translateY(3px);
   }
 
-  /* ===== STREET VIEW PLACEHOLDER ===== */
-  .streetview-placeholder {
-    position: relative;
-    aspect-ratio: 16/9;
-    border-radius: 20px;
-    background: linear-gradient(135deg, #F4F1EA 0%, #ECE7DD 100%);
-    border: 2px dashed var(--brico-black);
-    display: grid;
-    place-items: center;
-    padding: 40px;
-    text-align: center;
-    overflow: hidden;
-  } 
+ 
   
    /* ===== BENEFIT STRIP ===== */
   .benefit-strip {
