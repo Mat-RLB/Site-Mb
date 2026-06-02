@@ -200,8 +200,11 @@
   min-height: 500px;
   display: grid;
   place-items: center;
-  /* Pas de border-radius, pas de shadow, pas de background cadre */
+  overflow: hidden;
+  margin-top: -40px;  /* ← ajoute ça pour remonter l'image */
 }
+  /* Pas de border-radius, pas de shadow, pas de background cadre */
+
 
 .hero-image img {
   width: 100%;
