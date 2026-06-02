@@ -201,10 +201,22 @@
   display: grid;
   place-items: center;
   overflow: hidden;
-  margin-top: -100px;  /* ← ajoute ça pour remonter l'image */
+  margin-top: -40px;  /* ← ajoute ça pour remonter l'image */
 }
   /* Pas de border-radius, pas de shadow, pas de background cadre */
+@media (min-width: 981px) {
+  .hero-image {
+    margin-top: -40px;  /* ← juste sur desktop */
+  }
+}
 
+@media (max-width: 980px) {
+  .hero-image {
+    min-height: 380px;
+    display: none;
+    margin-top: 0px;  /* enlève le margin sur mobile */
+  }
+}
 
 .hero-image img {
   width: 100%;
