@@ -638,7 +638,7 @@
 /* Décktop — réduit le gap */
 .hero {
     background: var(--brico-paper);
-    padding: -10px 40px 80px;  /* ← 20px top au lieu de 0px */
+    padding: -50px 40px 80px;  /* ← 20px top au lieu de 0px */
     position: relative;
 }
 
@@ -652,6 +652,6 @@
 /* Très petit mobile — affine */
 @media (max-width: 600px) {
     .hero { 
-        padding: 50px 20px 30px;  /* ← ajuste selon tes préférences */
+        padding: 200px 20px 30px;  /* ← ajuste selon tes préférences */
     }
 }
