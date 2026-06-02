@@ -201,7 +201,7 @@
   display: grid;
   place-items: center;
   overflow: hidden;
-   align-self: start;
+  align-self: start;
 }
 
 .hero-image img {
