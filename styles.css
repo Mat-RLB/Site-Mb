@@ -543,7 +543,7 @@
   .cta-band::before { left: -80px; }
   .cta-band::after { right: -80px; }
 
-  .cta-band-inner { max-width: 720px; margin: 0 auto; position: relative; }
+  .cta-band-inner { max-width: 720px; margin: 0 auto; position: relative; z-index: 10; }
   .cta-band h2 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
@@ -632,4 +632,34 @@
   width: 56px;
   height: 56px;
   object-fit: contain;
+}
+
+@media (max-width: 980px) {
+  .hero { 
+    padding: 24px 24px 40px;  /* ← réduis le bottom padding */
+  }
+  
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 20px;  /* ← réduis le gap */
+  }
+  
+  .hero-image {
+    min-height: 300px;  /* ← réduis la hauteur min */
+    display: none;  /* ← cache l'image sur petit mobile */
+  }
+  
+  .streetview-placeholder {
+    display: none;  /* ← cache le placeholder vide */
+  }
+  
+  .hero-actions { 
+    flex-direction: column; 
+    align-items: stretch; 
+    gap: 12px; 
+  }
+  
+  .hero-actions a { 
+    justify-content: center; 
+  }
 }
