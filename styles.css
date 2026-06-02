@@ -635,33 +635,40 @@
 }
 
 
+.hero-image {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  min-height: 500px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;  /* ← CRITIQUE : sans ça l'image déborde */
+  align-self: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 980px) {
+  .hero-image {
+    min-height: 380px;  /* ← réduis sur mobile */
+    display: none;      /* ou cache-la complètement sur mobile */
+  }
+}
+
 .hero-inner {
   display: grid;
   grid-template-columns: 1fr 1.1fr;
   gap: 40px;
   align-items: flex-start;
-  padding-top: 140px;
-}
-
-/* L'image reste centrée même si le contenu est en haut */
-.hero-image {
-  align-self: center;  /* ← ça remplace le align-items pour juste l'image */
+  padding-top: 140px;  /* ← 40px au lieu de 140px */
 }
 
 @media (max-width: 980px) {
   .hero-inner {
-    padding-top: 120px;
-    align-items: center;  /* sur mobile, tout est centré */
+    padding-top: 120px;  /* ← 20px au lieu de 120px */
   }
-  
-  .hero-image {
-    align-self: auto;  /* annule le align-self sur mobile */
-  }
-}
-
-.hero-image img {
-  width: 100%;      /* ← force la largeur max */
-  max-width: 100%;  /* ← double-check */
-  object-fit: contain;
-  display: block;
 }
