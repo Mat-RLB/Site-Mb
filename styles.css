@@ -190,18 +190,18 @@
   display: grid;
   grid-template-columns: 1fr 1.1fr;
   gap: 40px;
-  align-items: start;
-  padding-top: 40px;
+  align-items: flex-start;
+  padding-top: 30px;
 }
 
 .hero-image {
   position: relative;
   aspect-ratio: 3 / 4;
-  min-height: 500px;
+  min-height: 400px;
   display: grid;
   place-items: center;
   overflow: hidden;
-  align-self: start;
+  align-self: flex-start;
 }
 
 .hero-image img {
@@ -220,7 +220,7 @@
   }
   
   .hero-image {
-    min-height: 380px;
+    min-height: 300px;
     display: none;
   }
 }
