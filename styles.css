@@ -658,3 +658,10 @@
     align-self: auto;  /* annule le align-self sur mobile */
   }
 }
+
+.hero-image img {
+  width: 100%;      /* ← force la largeur max */
+  max-width: 100%;  /* ← double-check */
+  object-fit: contain;
+  display: block;
+}
