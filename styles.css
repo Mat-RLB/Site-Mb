@@ -205,9 +205,8 @@
 }
 
 .hero-content {
-  padding-top: 50px;  /* ← ajoute ça pour écarter le texte du bandeau */
+  padding-top: 50px;
 }
-
 
 .hero-image img {
   width: 100%;
@@ -217,11 +216,6 @@
 }
 
 @media (max-width: 980px) {
-  .hero-content {
-    padding-top: 10px;  /* ← réduis de 20px à 10px */
-  }
-}
-  
   .hero-inner {
     grid-template-columns: 1fr;
     align-items: center;
@@ -233,7 +227,11 @@
     min-height: 300px;
     display: none;
   }
-
+  
+  .hero-content {
+    padding-top: 10px;
+  }
+}
 
   .hero-title .line2 {
     display: block;
@@ -647,4 +645,29 @@
   width: 56px;
   height: 56px;
   object-fit: contain;
+}
+
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 40px;
+  align-items: start;
+  padding-top: 30px;  /* ← garde 30px ici */
+}
+
+.hero-content {
+  padding-top: 120px;  /* ← ajoute ça pour baisser JUSTE le texte */
+}
+
+@media (max-width: 980px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding-top: 70px;
+  }
+  
+  .hero-content {
+    padding-top: 0px;  /* ← enlève sur mobile */
+  }
 }
