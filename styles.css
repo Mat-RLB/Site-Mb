@@ -635,30 +635,36 @@
 }
 
 
-/* Desktop grand (1920px+) — très serré */
+/* Desktop — 0 padding top, comme avant */
 .hero {
     background: var(--brico-paper);
-    padding: 12px 40px 80px;
+    padding: 0px 40px 80px;  /* ← revenir à 0px */
     position: relative;
 }
 
-/* Laptop/Tablette grande (1024px à 980px) — moyen */
+/* Laptop (1024px à 1440px) — minimaliste */
+@media (max-width: 1440px) {
+    .hero { 
+        padding: 8px 40px 80px;
+    }
+}
+
 @media (max-width: 1024px) {
     .hero { 
-        padding: 40px 24px 64px;
+        padding: 20px 24px 64px;
     }
 }
 
-/* Tablette/Mobile (980px à 600px) — plus d'air */
+/* Tablette (980px et moins) — plus d'air pour mobile */
 @media (max-width: 980px) {
     .hero { 
-        padding: 80px 24px 64px;
+        padding: 70px 24px 64px;
     }
 }
 
-/* Petit mobile (<600px) */
+/* Mobile (<600px) */
 @media (max-width: 600px) {
     .hero { 
-        padding: 60px 20px 30px;
+        padding: 50px 20px 30px;
     }
 }
