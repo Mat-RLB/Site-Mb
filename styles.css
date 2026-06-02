@@ -635,22 +635,14 @@
 }
 
 
-.hero-inner {
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 40px;
-  align-items: start;  /* ← change 'flex-start' en 'start' */
-  padding-top: 0px;
-}
-
 .hero-image {
   position: relative;
   aspect-ratio: 3 / 4;
   min-height: 500px;
   display: grid;
   place-items: center;
-  overflow: hidden;
-  /* PAS D'align-self du tout */
+  overflow: hidden;  /* ← CRITIQUE : sans ça l'image déborde */
+  align-self: flex-start;
 }
 
 .hero-image img {
@@ -661,12 +653,27 @@
 }
 
 @media (max-width: 980px) {
-  .hero-inner {
-    grid-template-columns: 1fr;
-    align-items: center;
-  }
-  
   .hero-image {
-    display: none;
+    min-height: 380px;  /* ← réduis sur mobile */
+     align-self: auto;
+    display: none;      /* ou cache-la complètement sur mobile */
   }
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 40px;
+  align-items: flex-start;
+  padding-top: 140px;  /* ← 40px au lieu de 140px */
+}
+
+@media (max-width: 980px) {
+  .hero-inner {
+    padding-top: 120px;  /* ← 20px au lieu de 120px */
+  }
+}
+
+.hero-content {
+  padding-top: 20px;  /* ← ajoute un padding juste au texte, pas à toute la grille */
 }
