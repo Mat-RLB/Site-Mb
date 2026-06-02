@@ -639,12 +639,20 @@
   display: grid;
   grid-template-columns: 1fr 1.1fr;
   gap: 40px;
-  align-items: flex-start;  /* ← change de 'center' à 'flex-start' */
+  align-items: flex-start;
+  padding-top: 40px;  /* ← ajoute du padding interne */
 }
 
-/* Sur tablette/mobile, tu peux recentrer */
+/* Sur tablette/mobile, ajuste */
 @media (max-width: 980px) {
   .hero-inner {
-    align-items: center;  /* remet en center sur mobile */
+    padding-top: 20px;  /* moins sur mobile */
+    align-items: center;  /* et recentre si tu veux */
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-inner {
+    padding-top: 10px;
   }
 }
