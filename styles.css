@@ -1,5 +1,5 @@
   :root {
-    --brico-red: #2b9e81;
+    --brico-red: #eb0029;
     --brico-red-dark: #C4001F;
     --brico-green: #43b02a;
     --brico-green-dark: #009b77;
@@ -634,32 +634,22 @@
   object-fit: contain;
 }
 
+
 @media (max-width: 980px) {
-  .hero { 
-    padding: 24px 24px 40px;  /* ← réduis le bottom padding */
+  .hero {
+    padding: 60px 24px 40px;  /* ← augmente le padding-top (60px au lieu de 24px) */
   }
-  
+
+  .hero-actions {
+    margin-bottom: 20px;  /* ← réduis de 56px à 20px */
+  }
+
   .hero-inner {
     grid-template-columns: 1fr;
-    gap: 20px;  /* ← réduis le gap */
+    gap: 20px;
   }
-  
+
   .hero-image {
-    min-height: 300px;  /* ← réduis la hauteur min */
-    display: none;  /* ← cache l'image sur petit mobile */
-  }
-  
-  .streetview-placeholder {
-    display: none;  /* ← cache le placeholder vide */
-  }
-  
-  .hero-actions { 
-    flex-direction: column; 
-    align-items: stretch; 
-    gap: 12px; 
-  }
-  
-  .hero-actions a { 
-    justify-content: center; 
+    min-height: 300px;
   }
 }
