@@ -635,21 +635,23 @@
 }
 
 
+/* Décktop — réduit le gap */
+.hero {
+    background: var(--brico-paper);
+    padding: 20px 40px 80px;  /* ← 20px top au lieu de 0px */
+    position: relative;
+}
+
+/* Tablette/Mobile — augmente le gap */
 @media (max-width: 980px) {
-  .hero {
-    padding: 60px 24px 40px;  /* ← augmente le padding-top (60px au lieu de 24px) */
-  }
+    .hero { 
+        padding: 60px 24px 64px;  /* ← 60px top pour avoir de l'air */
+    }
+}
 
-  .hero-actions {
-    margin-bottom: 20px;  /* ← réduis de 56px à 20px */
-  }
-
-  .hero-inner {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .hero-image {
-    min-height: 300px;
-  }
+/* Très petit mobile — affine */
+@media (max-width: 600px) {
+    .hero { 
+        padding: 50px 20px 30px;  /* ← ajuste selon tes préférences */
+    }
 }
