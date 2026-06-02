@@ -196,13 +196,18 @@
 
 .hero-image {
   position: relative;
-  aspect-ratio: 3 / 4;
-  min-height: 400px;
+  aspect-ratio: 1 / 1;
+  min-height: 350px;
   display: grid;
   place-items: center;
   overflow: hidden;
   align-self: flex-start;
 }
+
+.hero-content {
+  padding-top: 50px;  /* ← ajoute ça pour écarter le texte du bandeau */
+}
+
 
 .hero-image img {
   width: 100%;
