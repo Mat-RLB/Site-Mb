@@ -19,18 +19,24 @@
 <!-- HEADER -->
 <header>
   <a class="logo" href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
-    <img class="logo-img" src="images\logo-gpr-mb.png" alt="Groupe MB logo">
+    <img class="logo-img" src="images/logo-gpr-mb.png" alt="Groupe MB logo">
   </a>
-    <nav class="main-nav">
-      <a href="#">Notre accompagnement</a>
-      <a href="#">Inspirations & Réalisations</a>
-      <a href="#">Agencement</a>
-      <a href="#contact">Contact</a>
+  <nav class="main-nav">
+    <a href="#">Notre accompagnement</a>
+    <a href="#">Inspirations & Réalisations</a>
+    <a href="#">Agencement</a>
+    <a href="#contact">Contact</a>
   </nav>
-  <a href="#contact" class="btn-cta">
-    Lancer mon projet
-    <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-  </a>
+  <img class="nav-all-mb" src="images/all-mb.png" alt="Toutes les enseignes Mr.Bricolage">
+  <button class="burger" aria-label="Menu" onclick="this.classList.toggle('open'); document.getElementById('mobile-menu').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#">Notre accompagnement</a>
+    <a href="#">Inspirations & Réalisations</a>
+    <a href="#">Agencement</a>
+    <a href="#contact" onclick="document.getElementById('mobile-menu').classList.remove('open'); document.querySelector('.burger').classList.remove('open')">Contact</a>
+  </div>
 </header>
 
 <!-- HERO -->
@@ -155,7 +161,7 @@
 
     <div>
       <div class="insp-eyebrow">Inspirations & Réalisations</div>
-      <h2 class="display insp-title">Pourquoi faire <em>un projet ?</em></h2>
+      <h2 class="display insp-title">Pourquoi faire <em>un projet&nbsp;?</em></h2>
       <p class="insp-sub">Parce qu'un magasin qui n'évolue pas perd 3 à 5 % de fréquentation par an. Voici ce qu'un projet d'aménagement Mr.Bricolage vous apporte concrètement.</p>
 
       <ul class="why-list">
