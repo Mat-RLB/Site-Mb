@@ -64,7 +64,7 @@
 
 
 
-  .logo-img { height: 38px; display: block; }
+  .logo-img { height: 44px; display: block; }
   .logo-divider {
     width: 1px;
     height: 26px;
@@ -100,7 +100,7 @@ nav.main-nav a {
   color: rgba(255,255,255,0.85);
   text-decoration: none;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.01em;
   transition: color 0.2s;
   position: relative;
