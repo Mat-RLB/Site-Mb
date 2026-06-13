@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr" class="page-home">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mr.Bricolage — Aménagement et Projets Magasins</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- TOP ALERT BAR -->
+<div class="alert-bar">
+  <span>●</span>+150 projets concept déployés partout en France – Expertise retail terrain – Performance mesurable
+</div>
+
+<!-- HEADER -->
+<header>
+  <a class="logo" href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+    <img class="logo-img" src="images/logo-gpr-mb.png" alt="Groupe MB logo">
+  </a>
+  <nav class="main-nav">
+    <a href="accompagnement.html">Notre accompagnement</a>
+    <a href="#">Inspirations & Réalisations</a>
+    <a href="#">Agencement</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <img class="nav-all-mb" src="images/all-mb.jpeg" alt="Toutes les enseignes Mr.Bricolage">
+  <button class="burger" aria-label="Menu" onclick="this.classList.toggle('open'); document.getElementById('mobile-menu').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#">Notre accompagnement</a>
+    <a href="#">Inspirations & Réalisations</a>
+    <a href="#">Agencement</a>
+    <a href="#contact" onclick="document.getElementById('mobile-menu').classList.remove('open'); document.querySelector('.burger').classList.remove('open')">Contact</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-inner">
+  <div class="hero-content">
+    
+    <h1 class="display hero-title">
+      Aménagement
+      <span class="line2"><em>et</em> Projets Magasins</span>
+    </h1>
+    <p class="hero-subtitle">Boostez la performance de vos magasins.<br>
+      Transformez vos points de vente en lieux performants et attractifs, à l’image du Groupe Mr.Bricolage.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-cta large">
+        Lancer mon projet
+        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#accompagnement" class="btn-outline">
+        Voir notre méthode
+        <span class="arrow-down">
+          <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 13l7 7 7-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </a>
+    </div>
+  </div>
+  
+    <div class="hero-image">
+      <img src="images/mb-magasin-1.jpeg" alt="Magasin Mr.Bricolage aménagé">
+    </div>
+  </div>
+</section>
+
+<!-- BENEFIT STRIP -->
+<div class="benefit-strip">
+  <div class="benefit-grid">
+    <div class="benefit">
+        <div class="benefit-icon">
+          <img src="images\mb-evo-vert.png" alt="illustration-pièce">
+        </div>
+        <div class="benefit-text">
+        <strong>Augmentez votre chiffre d’affaires</strong>
+        <span>Optimisation du parcours client et des mètres linéaires</span>
+      </div>
+    </div>
+    <div class="benefit">
+      <div class="benefit-icon">
+        <img src="images\mb-pouces.png" alt="illustration-pouces">
+      </div>
+      <div class="benefit-text">
+        <strong>Améliorez l’expérience en magasin</strong>
+        <span>Un parcours fluide qui favorise l’engagement et l’achat</span>
+      </div>
+    </div>
+    <div class="benefit">
+      <div class="benefit-icon">
+        <img src="images\mb-casque.png" alt="illustration-casque">
+      </div>
+      <div class="benefit-text">
+        <strong>Optimiser les surfaces</strong>
+        <span>Exploitez chaque m² efficacement</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- NOTRE ACCOMPAGNEMENT -->
+<section class="section" id="accompagnement">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-eyebrow">Notre méthode · 5 étapes</div>
+      <h2 class="display section-title">Notre <em>accompagnement</em>,<br>de A à Z</h2>
+    </div>
+
+    
+    
+    <div class="accompagnement-grid">
+  <div class="acc-card">
+    <div class="acc-num">01</div>
+    <div class="acc-icon">
+      <img src="images\mb-jumelles.png" alt="ilustration-jumelles">
+    </div>
+    <h3 class="acc-title">Audit & Diagnostic magasin</h3>
+    <p class="acc-desc">Analyse complète de votre point de vente et de votre zone de chalandise, identification des opportunités de gain rapide.</p>
+  </div>
+
+  <div class="acc-card">
+    <div class="acc-num">02</div>
+    <div class="acc-icon">
+      <img src="images\mb-crayon.png" alt="ilustration-crayon">
+    </div>
+    <h3 class="acc-title">Conception stratégique</h3>
+    <p class="acc-desc">Optimisation du plan et de la mise à l'image au concept (implantations, planogrammes + parcours type directeur).</p>
+  </div>
+
+  <div class="acc-card">
+    <div class="acc-num">03</div>
+    <div class="acc-icon">
+      <img src="images\mb-check.png" alt="ilustration-check">
+    </div>  
+    <h3 class="acc-title">Planification & chiffrage</h3>
+    <p class="acc-desc">Validation du plan, des devis et écriture du rétroplanning en priorisant les actions.</p>
+  </div>
+
+  <div class="acc-card">
+    <div class="acc-num">04</div>
+    <div class="acc-icon">
+      <img src="images\mb-magasin.png" alt="ilustration-magasin">
+    </div>
+    <h3 class="acc-title">Suivi & déploiement opérationnel</h3>
+    <p class="acc-desc">Pilotage terrain du projet, suivi des planning, reporting de visite et coordination de prestataires.</p>
+  </div>
+
+  <div class="acc-card">
+    <div class="acc-num">05</div>
+    <div class="acc-icon">
+      <img src="images\mb-jumelles.png" alt="ilustration-ouverture">
+    </div>
+    <h3 class="acc-title">Post ouverture & ouverture</h3>
+    <p class="acc-desc">Vérifier que tout est prêt le jour J, pour accueillir le client dans les meilleures conditions.</p>
+  </div>
+</div>
+  </div>
+</section>
+
+
+<!-- INSPIRATIONS & REALISATIONS - PLACEHOLDERS -->
+<section class="inspirations" id="inspirations">
+  <div class="inspirations-inner">
+    
+
+    <div>
+      <div class="insp-eyebrow">Inspirations & Réalisations</div>
+      <h2 class="display insp-title">Pourquoi faire <em>un projet&nbsp;?</em></h2>
+      <p class="insp-sub">Parce qu'un magasin qui n'évolue pas perd 3 à 5 % de fréquentation par an. Voici ce qu'un projet d'aménagement Mr.Bricolage vous apporte concrètement.</p>
+
+      <ul class="why-list">
+        <li>
+          <span class="check">
+            <svg width="12" height="12" fill="none" stroke="white" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          Augmenter le chiffre d'affaires
+        </li>
+        <li>
+          <span class="check">
+            <svg width="12" height="12" fill="none" stroke="white" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          Améliorer l'expérience client
+        </li>
+        <li>
+          <span class="check">
+            <svg width="12" height="12" fill="none" stroke="white" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          Optimiser les surfaces de vente
+        </li>
+        <li>
+          <span class="check">
+            <svg width="12" height="12" fill="none" stroke="white" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          Moderniser l'image du magasin
+        </li>
+        <li>
+          <span class="check">
+            <svg width="12" height="12" fill="none" stroke="white" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          Gagner en efficacité opérationnelle
+        </li>
+      </ul>
+
+      <a href="#contact" class="btn-cta green large">
+        Découvrir nos réalisations
+        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="insp-image">
+      <img src="images\mb-magasin-2.jpeg" alt="Magasin Mr.Bricolage aménagé">
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band" id="contact">
+  <div class="cta-band-inner">
+    <h2>Faites décoller la performance<br> de votre magasin dès maintenant</h2>
+    <p>Sous 72h, un expert Mr.Bricolage vous recontacte pour étudier votre projet et identifier les leviers concrets pour améliorer la performance de votre point de vente.
+
+ </p>
+    <a href="#" class="btn-cta dark large">
+      Lancer mon projet
+      <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <img class="logo-img" src="images\logo-gpr-mb.png" alt="Groupe MB logo">
+    <div class="footer-links">
+      <a href="accompagnement.html">Notre accompagnement</a>
+      <a href="#">Inspirations & Réalisations</a>
+      <a href="#">Agencement</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 Mr.Bricolage — Pôle Aménagement & Projets Magasins. Tous droits réservés.
+  </div>
+</footer>
+
+</body>
+</html>
