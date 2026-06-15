@@ -230,15 +230,7 @@ nav.main-nav a.nav-active::after {
     padding: 0 40px 64px;
     position: relative;
   }
-  .hero-grid-bg {
-    position: absolute;
-    inset: 0;
-    background-image:
-      linear-gradient(rgba(14,14,16,0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(14,14,16,0.04) 1px, transparent 1px);
-    background-size: 32px 32px;
-    pointer-events: none;
-  }
+
 
   .hero-inner {
     max-width: 1280px;
@@ -583,6 +575,32 @@ nav.main-nav a.nav-active::after {
     width: 42px;
     height: 42px;
   }
+
+  .acc-card-link:nth-child(1) .acc-icon img {
+  width: 48px;
+  height: 48px;
+}
+
+  .acc-card-link:nth-child(2) .acc-icon img {
+  width: 66px;
+  height: 66px;
+}
+
+
+  .acc-card-link:nth-child(3) .acc-icon img {
+  width: 66px;
+  height: 66px;
+}
+
+  .acc-card-link:nth-child(4) .acc-icon img {
+  width: 66px;
+  height: 66px;
+}
+
+  .acc-card-link:nth-child(5) .acc-icon img {
+  width: 66px;
+  height: 66px;
+}
 
   .acc-title {
     font-family: 'Ubuntu', sans-serif;
@@ -1023,13 +1041,6 @@ nav.main-nav a.nav-active::after {
   object-fit: contain;
 }
 
-/* Icônes cards accompagnement */
-.acc-icon img {
-  width: 42px;
-  height: 42px;
-  object-fit: contain;
-}
-
 /* ===== PAGE ACCOMPAGNEMENT ===== */
 
 /* Masquer le alert-bar sur les pages non-accueil */
@@ -1114,7 +1125,7 @@ nav.main-nav a.nav-active::after {
   color: rgba(227, 224, 224, 0.943); ;
   max-width: 580px;
   line-height: 1.55;
-  margin-bottom: 112px;
+  margin-bottom: 62px;
 }
 
 .timeline-nav {
