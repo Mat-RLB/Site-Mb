@@ -730,8 +730,11 @@ footer {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: white;
-  border: 1.5px solid var(--brico-black);
+  background: rgba(255,255,255,0.10);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1.5px solid rgba(255,255,255,0.22);
+  color: white;
   padding: 6px 14px;
   border-radius: 999px;
   font-size: 12px;
